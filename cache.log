@@ -1,0 +1,56 @@
+INFO:root:Initialising Threads
+INFO:root:Trace file trace.txt open
+INFO:root:Index bitmask: 0x1fff0000
+INFO:root:Tag bitmask: 0xc0000000
+INFO:root:Initialising Cache of 16384 lines
+INFO:root:Cache initialised
+INFO:root:Initialising Main Memory 262144 lines
+INFO:root:Main Memory initialised
+INFO:root:Starting Threads CPUSIM CACHESIM
+INFO:root:CPU Queue Start
+INFO:root:Threads CPUSIM CACHESIM running...
+DEBUG:root:Read line: R 0x00000000
+DEBUG:root:Read line: R 0x00000004
+DEBUG:root:Read line: W 0x00000800 0x00000000
+DEBUG:root:Read line: R 0x00000008
+DEBUG:root:Read line: R 0x0000000C
+DEBUG:root:Read line: R 0x00000010
+DEBUG:root:Read line: W 0x00000804 0x0000000A
+DEBUG:root:Read line: W 0x00000808 0xFFFFFFFF
+DEBUG:root:Read line: W 0x0000080C 0x5A5A5A5A
+DEBUG:root:Read line: R 0x00000014
+DEBUG:root:Read line: R 0x00000018
+DEBUG:root:Read line: R 0x0000001C
+DEBUG:root:Read line: R 0x00000C00
+DEBUG:root:Read line: R 0x00000020
+DEBUG:root:Read line: R 0x00000024
+DEBUG:root:Read line: R 0x00000400
+DEBUG:root:Read line: R 0x00000404
+DEBUG:root:Read line: R 0x00000408
+DEBUG:root:Read line: W 0x00000D00 0x00000001
+DEBUG:root:Read line: W 0x00000D04 0x00000002
+DEBUG:root:Read line: W 0x00000D08 0x00000003
+DEBUG:root:Read line: W 0x00000D0C 0x00000004
+DEBUG:root:Read line: W 0x00000D10 0x00000005
+DEBUG:root:Read line: R 0x0000040C
+DEBUG:root:Read line: R 0x00000E00
+DEBUG:root:Read line: R 0x00000E04
+DEBUG:root:Read line: R 0x00000E08
+DEBUG:root:Read line: R 0x00000E0C
+DEBUG:root:Read line: R 0x00000E10
+DEBUG:root:Read line: R 0x00000410
+DEBUG:root:Read line: W 0x00000FFC 0xA5A5A5A5
+DEBUG:root:Read line: W 0x00000FF8 0x11111111
+DEBUG:root:Read line: W 0x00000FF4 0x01010101
+DEBUG:root:Read line: R 0x00000614
+DEBUG:root:Read line: R 0x00000618
+DEBUG:root:Read line: R 0x0000061C
+DEBUG:root:Read line: R 0x00000629
+DEBUG:root:Read line: R 0x00000FF4
+DEBUG:root:Read line: R 0x00000FF8
+DEBUG:root:Read line: R 0x00000FFC
+DEBUG:root:Read line: R 0x00000028
+DEBUG:root:Read line: R 0x0000002C
+DEBUG:root:Read line: R 0x00000030
+INFO:root:File: trace.txt has been read
+INFO:root:CPU Queue Finished
