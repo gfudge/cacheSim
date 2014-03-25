@@ -1,13 +1,328 @@
 INFO:root:Initialising Threads
 INFO:root:CPUSIM: Trace file trace.txt open
-INFO:root:CACHESIM: Index bitmask: 0xfffc0
-INFO:root:CACHESIM: Tag bitmask: 0xfff00000
-INFO:root:CACHESIM: Initialising Cache of 16384 lines
+INFO:root:CACHESIM: Physical Memory:  	 67108864 bytes
+INFO:root:CACHESIM: Cache Memory:     	 16777216 bytes
+INFO:root:CACHESIM: Cache Ways:       	 2 
+INFO:root:CACHESIM: Cache Line Length:	 8 words
+INFO:root:CACHESIM: Data Length:      	 32 bits
+INFO:root:<TTTTTTTTTIIIIIIIIIIIIIIIIIIIIOOO>
+INFO:root:CACHESIM: Offset bitmask: 0x7
+INFO:root:CACHESIM: Index bitmask: 0x7ffff8
+INFO:root:CACHESIM: Tag bitmask: 0xff800000
+INFO:root:CACHESIM: Initialising Cache of 2097152 lines
 INFO:root:CACHESIM: Cache initialised
-INFO:root:CACHESIM: Initialising Main Memory 4194304 lines
+INFO:root:CACHESIM: Initialising Main Memory 8388608 lines
 INFO:root:CACHESIM: Main Memory initialised
 INFO:root:Starting Threads CPUSIM CACHESIM
 INFO:root:CPUSIM: CPU Queue Start
+DEBUG:root:CPUSIM: Writing R 0x00000000 to bus
 INFO:root:Threads CPUSIM CACHESIM running...
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000000']
+DEBUG:root:CPUSIM: Writing R 0x00000404 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 0 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000000
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000404']
+DEBUG:root:CPUSIM: Writing R 0x00000004 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 128 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x00000404
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 4
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 4
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000004']
+DEBUG:root:CPUSIM: Writing W 0x00000800 0x00000000 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 0 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x00000004
+INFO:root:CACHESIM: HIT!: 0
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['W', '0x00000800', '0x00000000']
+DEBUG:root:CPUSIM: Writing R 0x00000008 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 256 	 Offset: 0 	
+DEBUG:root:CACHESIM: Writing data 0x00000000 to address 0x00000800
+INFO:root:CACHESIM: Cache line 256 evicted
+INFO:root:CACHESIM: Written 0 to cache: 0
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000008']
+DEBUG:root:CPUSIM: Writing R 0x0000000C to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 1 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000008
+INFO:root:CACHESIM: HIT!: 1
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x0000000C']
+DEBUG:root:CPUSIM: Writing R 0x00000010 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 1 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x0000000C
+INFO:root:CACHESIM: HIT!: 1
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000010']
+DEBUG:root:CPUSIM: Writing W 0x00000804 0x0000000A to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 2 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000010
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+DEBUG:root:CACHESIM: Executing instruction: ['W', '0x00000804', '0x0000000A']
+DEBUG:root:CPUSIM: Writing W 0x00000808 0xFFFFFFFF to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 256 	 Offset: 4 	
+DEBUG:root:CACHESIM: Writing data 0x0000000A to address 0x00000804
+INFO:root:CACHESIM: Written 10 to cache: 4
+INFO:root:CACHESIM: Writeback at 257
+DEBUG:root:CACHESIM: Executing instruction: ['W', '0x00000808', '0xFFFFFFFF']
+DEBUG:root:CPUSIM: Writing W 0x0000080C 0x5A5A5A5A to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 257 	 Offset: 0 	
+DEBUG:root:CACHESIM: Writing data 0xFFFFFFFF to address 0x00000808
+INFO:root:CACHESIM: Cache line 257 evicted
+INFO:root:CACHESIM: Written 4294967295 to cache: 0
+DEBUG:root:CACHESIM: Executing instruction: ['W', '0x0000080C', '0x5A5A5A5A']
+DEBUG:root:CPUSIM: Writing R 0x00000014 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 257 	 Offset: 4 	
+DEBUG:root:CACHESIM: Writing data 0x5A5A5A5A to address 0x0000080C
+INFO:root:CACHESIM: Written 1515870810 to cache: 4
+INFO:root:CACHESIM: Writeback at 258
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000014']
+DEBUG:root:CPUSIM: Writing R 0x00000018 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 2 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x00000014
+INFO:root:CACHESIM: HIT!: 2
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000018']
+DEBUG:root:CPUSIM: Writing R 0x0000001C to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 3 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000018
+INFO:root:CACHESIM: HIT!: 3
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x0000001C']
+DEBUG:root:CPUSIM: Writing R 0x00000C00 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 3 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x0000001C
+INFO:root:CACHESIM: HIT!: 3
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000C00']
+DEBUG:root:CPUSIM: Writing R 0x00000020 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 384 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000C00
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000020']
+DEBUG:root:CPUSIM: Writing R 0x00000024 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 4 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000020
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000024']
+DEBUG:root:CPUSIM: Writing R 0x00000400 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 4 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x00000024
+INFO:root:CACHESIM: HIT!: 4
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000400']
+DEBUG:root:CPUSIM: Writing R 0x00000404 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 128 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000400
+INFO:root:CACHESIM: HIT!: 128
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000404']
+DEBUG:root:CPUSIM: Writing R 0x00000408 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 128 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x00000404
+INFO:root:CACHESIM: HIT!: 128
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000408']
+DEBUG:root:CPUSIM: Writing W 0x00000D00 0x00000001 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 129 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000408
+INFO:root:CACHESIM: HIT!: 129
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['W', '0x00000D00', '0x00000001']
+DEBUG:root:CPUSIM: Writing W 0x00000D04 0x00000002 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 416 	 Offset: 0 	
+DEBUG:root:CACHESIM: Writing data 0x00000001 to address 0x00000D00
+INFO:root:CACHESIM: Cache line 416 evicted
+INFO:root:CACHESIM: Written 1 to cache: 0
+DEBUG:root:CACHESIM: Executing instruction: ['W', '0x00000D04', '0x00000002']
+DEBUG:root:CPUSIM: Writing W 0x00000D08 0x00000003 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 416 	 Offset: 4 	
+DEBUG:root:CACHESIM: Writing data 0x00000002 to address 0x00000D04
+INFO:root:CACHESIM: Written 2 to cache: 4
+INFO:root:CACHESIM: Writeback at 416
+DEBUG:root:CACHESIM: Executing instruction: ['W', '0x00000D08', '0x00000003']
+DEBUG:root:CPUSIM: Writing W 0x00000D0C 0x00000004 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 417 	 Offset: 0 	
+DEBUG:root:CACHESIM: Writing data 0x00000003 to address 0x00000D08
+INFO:root:CACHESIM: Cache line 417 evicted
+INFO:root:CACHESIM: Written 3 to cache: 0
+DEBUG:root:CACHESIM: Executing instruction: ['W', '0x00000D0C', '0x00000004']
+DEBUG:root:CPUSIM: Writing W 0x00000D10 0x00000005 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 417 	 Offset: 4 	
+DEBUG:root:CACHESIM: Writing data 0x00000004 to address 0x00000D0C
+INFO:root:CACHESIM: Written 4 to cache: 4
+INFO:root:CACHESIM: Writeback at 417
+DEBUG:root:CACHESIM: Executing instruction: ['W', '0x00000D10', '0x00000005']
+DEBUG:root:CPUSIM: Writing R 0x0000040C to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 418 	 Offset: 0 	
+DEBUG:root:CACHESIM: Writing data 0x00000005 to address 0x00000D10
+INFO:root:CACHESIM: Cache line 418 evicted
+INFO:root:CACHESIM: Written 5 to cache: 0
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x0000040C']
+DEBUG:root:CPUSIM: Writing R 0x00000E00 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 129 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x0000040C
+INFO:root:CACHESIM: HIT!: 129
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000E00']
+DEBUG:root:CPUSIM: Writing R 0x00000E04 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 448 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000E00
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000E04']
+DEBUG:root:CPUSIM: Writing R 0x00000E08 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 448 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x00000E04
+INFO:root:CACHESIM: HIT!: 448
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000E08']
+DEBUG:root:CPUSIM: Writing R 0x00000E0C to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 449 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000E08
+INFO:root:CACHESIM: HIT!: 449
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000E0C']
+DEBUG:root:CPUSIM: Writing R 0x00000E10 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 449 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x00000E0C
+INFO:root:CACHESIM: HIT!: 449
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000E10']
+DEBUG:root:CPUSIM: Writing R 0x00000410 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 450 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000E10
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000410']
+DEBUG:root:CPUSIM: Writing W 0x00000FFC 0xA5A5A5A5 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 130 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000410
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+DEBUG:root:CACHESIM: Executing instruction: ['W', '0x00000FFC', '0xA5A5A5A5']
+DEBUG:root:CPUSIM: Writing W 0x00000FF8 0x11111111 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 511 	 Offset: 4 	
+DEBUG:root:CACHESIM: Writing data 0xA5A5A5A5 to address 0x00000FFC
+INFO:root:CACHESIM: Cache line 511 evicted
+INFO:root:CACHESIM: Written 2779096485 to cache: 4
+DEBUG:root:CACHESIM: Executing instruction: ['W', '0x00000FF8', '0x11111111']
+DEBUG:root:CPUSIM: Writing W 0x00000FF4 0x01010101 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 511 	 Offset: 0 	
+DEBUG:root:CACHESIM: Writing data 0x11111111 to address 0x00000FF8
+INFO:root:CACHESIM: Written 286331153 to cache: 0
+INFO:root:CACHESIM: Writeback at 512
+DEBUG:root:CACHESIM: Executing instruction: ['W', '0x00000FF4', '0x01010101']
+DEBUG:root:CPUSIM: Writing R 0x00000614 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 510 	 Offset: 4 	
+DEBUG:root:CACHESIM: Writing data 0x01010101 to address 0x00000FF4
+INFO:root:CACHESIM: Cache line 510 evicted
+INFO:root:CACHESIM: Written 16843009 to cache: 4
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000614']
+DEBUG:root:CPUSIM: Writing R 0x00000618 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 194 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x00000614
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 4
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 4
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000618']
+DEBUG:root:CPUSIM: Writing R 0x0000061C to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 195 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000618
+INFO:root:CACHESIM: HIT!: 195
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x0000061C']
+DEBUG:root:CPUSIM: Writing R 0x00000629 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 195 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x0000061C
+INFO:root:CACHESIM: HIT!: 195
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000629']
+DEBUG:root:CPUSIM: Writing R 0x00000FF4 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 197 	 Offset: 1 	
+DEBUG:root:CACHESIM: Reading address 0x00000629
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 1
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 1
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000FF4']
+DEBUG:root:CPUSIM: Writing R 0x00000FF8 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 510 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x00000FF4
+INFO:root:CACHESIM: HIT!: 510
+INFO:root:CACHESIM: Read from cache: 16843009
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000FF8']
+DEBUG:root:CPUSIM: Writing R 0x00000FFC to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 511 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000FF8
+INFO:root:CACHESIM: HIT!: 511
+INFO:root:CACHESIM: Read from cache: 286331153
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000FFC']
+DEBUG:root:CPUSIM: Writing R 0x00000028 to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 511 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x00000FFC
+INFO:root:CACHESIM: HIT!: 511
+INFO:root:CACHESIM: Read from cache: 2779096485
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000028']
+DEBUG:root:CPUSIM: Writing R 0x0000002C to bus
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 5 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000028
+INFO:root:CACHESIM: HIT!: 5
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x0000002C']
+DEBUG:root:CPUSIM: Writing R 0x00000030 to bus
 INFO:root:CPUSIM: File: trace.txt has been read
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 5 	 Offset: 4 	
+DEBUG:root:CACHESIM: Reading address 0x0000002C
+INFO:root:CACHESIM: HIT!: 5
+INFO:root:CACHESIM: Read from cache: None
+DEBUG:root:CACHESIM: Executing instruction: ['R', '0x00000030']
 INFO:root:CPUSIM: CPU Queue Finished
+DEBUG:root:CACHESIM: Tag: 0 	 Index: 6 	 Offset: 0 	
+DEBUG:root:CACHESIM: Reading address 0x00000030
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
+INFO:root:CACHESIM: MISS: Invalid cache line
+INFO:root:CACHESIM: Read from memory: None
+INFO:root:CACHESIM: Written None to cache: 0
