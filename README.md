@@ -11,7 +11,7 @@ Simulates both direct mapped cache or set associative of 2,4 or 8 ways.
  Should work with Python 3+
 
  Short note on Pythonic OOP:
- #
+ ===========================
  By design, Python does not support Private methods.
  However, any method prepended with an underscore
  indicates an internal method. The interpreter does not
@@ -20,14 +20,14 @@ Simulates both direct mapped cache or set associative of 2,4 or 8 ways.
  using an underscored method from outside the class.
 
  Microprocessor Architecture Coursework 2: Cache Simulator
- #
+ =========================================================
  Based on a simple Von Neumann Architecture
  using CPU instructions located by default
  in trace file "trace.txt"
  Generates Log File "cache.log" provided by Python logging library
 
  BASIC OPERATION:
- #
+ ================
  Two thread based classes: 'CacheSim' and 'CpuSim'
  CpuSim reads the tracefile into memory and sends them to global FIFO
  Queue object 'instructionQueue'.
@@ -38,7 +38,7 @@ Simulates both direct mapped cache or set associative of 2,4 or 8 ways.
  the program will exit.
 
  LOG FILE:
- #
+ =========
  The log file will by default be set to INFO verbosity. However, DEBUG
  messages may be displayed also by changing the logging value to:
  'level = logging.DEBUG'.
