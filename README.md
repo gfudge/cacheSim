@@ -21,7 +21,7 @@ Simulates both direct mapped cache or set associative of 2,4 or 8 ways.
  using an underscored method from outside the class.
 
  Microprocessor Architecture Coursework 2: Cache Simulator
-=========================================================
+
  Based on a simple Von Neumann Architecture
  using CPU instructions located by default
  in trace file "trace.txt"
